@@ -10,13 +10,13 @@
 		<meta name="generator" content="Jekyll v{{ jekyll.version }}">
 
 		<!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
 		<link rel="stylesheet" href="{{ site.url }}/css/main.css">
 		<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
 
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/touch-icon.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="apple-touch-icon" href={{ "/apple-touch-icon.png" | prepend: site.url }}>
+    <link rel="icon" type="image/png" href={{ "/touch-icon.png" | prepend: site.url }} sizes="192x192">
+    <link rel="icon" type="image/png" href={{ "/images/favicon.png" | prepend: site.url }}>
 
     {% seo %}
     {% feed_meta %}
@@ -25,10 +25,10 @@
 
 	<body id="top">
     <header id="header">
-      <a href="{{ site.url }}" class="image avatar"><img class="editable" src="/images/avatar.jpg" alt="{{ site.author.name }}"></a>
+      <a href="{{ site.url }}" class="image avatar"><img class="editable" src="{{ site.url }}/images/avatar.jpg" alt="{{ site.author.name }}"></a>
       <h1 class="editable"><strong>I am <a href="/">Strata Reloaded</a></strong>, a super simple<br>
       responsive site template freebie<br>
-      adapted by <a href="http://comfusionllc.com">Comfusion LLC</a>.</h1>
+      adapted by <a href="http://tkvtv.com">TKVTV LLC</a>.</h1>
     </header>
 
     {{ content }}
@@ -53,17 +53,17 @@
       </ul>
       <ul class="copyright">
           <li>&copy; Untitled</li>
-          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-          <li>Theme: <a href="http://comfusionllc.com">Comfusion LLC</a></li>
+          <li>Design: <a href="http://facebook.com/tkgcci">takagotch</a></li>
+          <li>Theme: <a href="http://tkvtv.com/">TKVTV LLC</a></li>
       </ul>
     </footer>
 
-		<script src="/js/jquery.min.js"></script>
-		<script src="/js/jquery.poptrox.min.js"></script>
-		<script src="/js/skel.min.js"></script>
-		<script src="/js/util.js"></script>
+		<script src="{{ site.url }}/js/jquery.min.js"></script>
+		<script src="{{ site.url }}/js/jquery.poptrox.min.js"></script>
+		<script src="{{ site.url }}/js/skel.min.js"></script>
+		<script src="{{ site.url }}/js/util.js"></script>
 		<!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
-		<script src="/js/main.js"></script>
+		<script src="{{ site.url }}/js/main.js"></script>
 
 		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
 			<script>
@@ -79,3 +79,5 @@
 
 	</body>
 </html>
+
+
